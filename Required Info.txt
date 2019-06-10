@@ -1,0 +1,28 @@
+Git Helper - http://rogerdudler.github.io/git-guide/
+
+git config --global http.proxy http://<<user_name>>:<<password>>@<<url>>:<<port>>
+git config --global user.name "Dibyarup"
+git config --global user.email dibyarup@gmail.com
+
+
+git clone --branch <branch-name> <<git_url>>
+git checkout <<branch_name>>
+
+git pull origin <<branch_name>>  -- to fetch from parent branch 
+-----force pull---
+git fetch --all
+git reset --hard origin/master
+---done--
+git checkout --branch <<branch_name>>
+git status
+git diff -–name-only
+git add <filename>
+git add *
+git commit -m "Commit message"
+git push origin <branch name>
+
+git config --global merge.tool winmerge
+git config --replace --global mergetool.winmerge.cmd "\"D:\Program Files\WinMerge\WinMergeU.exe\" -e -u -dl \"Base\" -dr \"Mine\" \"$LOCAL\" \"$REMOTE\" \"$MERGED\""
+git config --global mergetool.prompt false
+
+

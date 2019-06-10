@@ -1,0 +1,20 @@
+[user]
+	name = Dibyarup Bera
+	email = dibyarup@gmail.com
+[http]
+	proxy = http://<<user_name>>:<<password>>@<<url>>:<<port>>
+	
+[merge]
+    tool = kdiff3
+[mergetool "kdiff3"]
+    path = <<path_of_kdiff3.exe>>
+[mergetool]
+	prompt = false
+	
+[diff]
+    tool = kdiff3
+    guitool = kdiff3
+[difftool "kdiff3"]
+    path =<<path_of_kdiff3.exe>>
+[difftool]
+	prompt = false
